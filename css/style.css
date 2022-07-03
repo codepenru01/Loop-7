@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.x-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    margin: 40px 0 40px 960px;
+    cursor: pointer;
+}
+
+.width-1 {
+    width: 100%;
+    height: 2px;
+    background-color: #36353b;
+    
+}
+
+.width-2 {
+    width: 100%;
+    height: 5px;
+    background-color: #36353b;
+    margin-top: 30px;
+    margin-top: 700px;
+}
+
+.father-1 {
+    position: relative;
+    perspective: 900px;
+}
+
+.project__img {
+    margin-top: 40px;
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    background-image: url('../img/screen.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transform: rotatex(-35deg);
+    box-shadow: white 0px 25px 60px -35px;
+    border-radius: 10px;
+}
+
+.father-2 {
+    position: relative;
+    perspective: 900px;
+}
+
+.project {
+    position: absolute;
+    top: 300px;
+    display: flex;
+    justify-content: space-between;
+    transform: rotatex(35deg);
+}
+
+.project__numbers-1 {
+    margin-top: 15px;
+    margin-right: 30px;
+}
+
+.project__numbers-2 {
+    margin-top: 15px;
+    margin-left: 30px;
+}
+
+.project__numbers-num {
+    color: white;
+    font-size: 22px;
+    margin-bottom: 50px;
+}
+
+.project__table-title{
+    width: 900px;    
+}
+
+.table__title-tr{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.title__tr-th {
+    width: 50px;
+    height: 50px;
+    background-color: #4da1fc;
+    color: #4da1fc;
+    border-radius: 50%;
+    padding-top: 15px;
+}
+
+.title__tr-th:hover {
+    outline: 4px solid #4da1fc;
+    outline-offset: 5px ;
+    color: white;
+}
+
+.title__tr-th-green {
+    width: 50px;
+    height: 50px;
+    background-color: #63dd4c;
+    color: #63dd4c;
+    border-radius: 50%;
+    padding-top: 15px;
+}
+
+.title__tr-th-green:hover {
+    outline: 4px solid #63dd4c;
+    outline-offset: 5px ;
+    color: white;
+}
+
+.project-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.records {
+    display: flex;
+    padding: 50px 0;
+}
+
+.records__blue{
+    width: 14px;
+    height: 14px;
+    background-color: #4da1fc;
+    border-radius: 50%;
+    margin-top: 5px;
+    margin-right: 7px;
+}
+
+.records__green{
+    width: 14px;
+    height: 14px;
+    background-color: #63dd4c;
+    border-radius: 50%;
+    margin: 5px 5px 0 20px;
+}
+
+.records__standard {
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 25px;
+    color: #FEFCF7; 
+}
+
+.records__vip {
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 25px;
+    color: #FEFCF7; 
+}
+
+.project__button {
+    display: inline-block;
+    background-color: #4da1fc;
+    border-radius: 6px;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FEFCF7;
+    padding: 14px 27px;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 400px) {
+    
+    .x-img {
+        display: none;
+    }
+    
+    
+    .project {
+        position: absolute;
+        top: 200px;
+        display: flex;
+        justify-content: space-between;
+        transform: rotatex(30deg);
+    }
+    
+    
+    .project__numbers-1 {
+        display: none;
+    }
+    
+    .project__numbers-2 {
+        display: none;
+    }
+    
+    .width-1 {
+        margin-top: 20px;
+    }
+    
+    .project__img {
+        margin-top: 15px;
+        position: absolute;
+        height: 200px;
+    }
+    
+    
+    .project__table-title{
+        width: 350px;    
+    }
+    
+    .table__title-tr{
+        margin-bottom: 10px;
+        
+        
+        
+    }
+    
+    .title__tr-th {
+        width: 20px;
+        height: 20px;
+        padding-top: 1px;
+    }
+    
+    
+    .title__tr-th-green {
+        width: 20px;
+        height: 20px;
+        padding-top: 1px;
+    }
+    
+    .project__numbers-1 {
+        margin-top: 1px;
+        margin-right: 10px;
+    }
+    
+    .project__numbers-2 {
+        margin-top: 1px;
+        margin-left: 10px;
+    }
+    
+    .project__numbers-num {
+        font-size: 20px;
+        margin-bottom: 17px;
+    }
+    
+    .width-2 {
+        margin-top: 350px;
+    }
+    
+    .project-link {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+    
+    .project__button {
+        margin-bottom: 20px;
+        font-size: 14px;
+        padding: 10px 25px;
+    }
+    
+}
